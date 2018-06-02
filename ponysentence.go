@@ -385,7 +385,7 @@ func generate(ponyCount int) (string, []string) {
 		// If nounverb, use a pony (20%) or an object (80%)?
 		noun := ""
 		if r.Intn(10) >= 8 {
-			noun = ponies[r.Intn(len(ponies))].Name
+			noun = pickRandomPony(r, ponies, characters).Name
 		} else {
 			noun = things[r.Intn(len(things))]
 		}
