@@ -209,7 +209,7 @@ func generate(ponyCount int) (string, []string) {
 	verbs := []verb{
 		{"walk around", "walks around"},
 		{"beg", "begs"},
-		{"attend", "attends"},
+		{"attend a show", "attends a show"},
 		{"bomb", "bombs"},
 		{"get baked", "gets baked"},
 		{"breathe", "breathes"},
