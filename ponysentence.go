@@ -339,7 +339,7 @@ func generate(ponyCount int) (string, []string) {
 		"at Rainbow Falls",
 		"in Baltimare",
 		"in Our Town",
-		"at Somnambula",
+		"in Somnambula",
 		"at Hayseed Swamp",
 		"at the train station",
 		"at Twilight's Library",
