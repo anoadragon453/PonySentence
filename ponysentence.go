@@ -327,7 +327,7 @@ func generate(ponyCount int) (string, []string) {
 		"at Mt. Aris",
 		"at the Town of Griffonstone",
 		"deep within Pinkie Pie's Party Cave",
-		"an orgy",
+		"at an orgy",
 		"within the Everfree Forest",
 		"in Daring Do's shack",
 		"at the Pie Rock Farm",
