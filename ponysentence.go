@@ -57,6 +57,7 @@ func generate(ponyCount int) (string, []string) {
 	if ponyCount < 1 {
 		return "Amount of ponies must be 1 or more.", nil
 	}
+	ponyCount -= 1
 
 	// Pinkie Pie and Rarity eat a bagel at a party.
 	// Choose between 1, 2, 3 characters
