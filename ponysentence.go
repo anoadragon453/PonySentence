@@ -23,7 +23,7 @@ var (
 // NewSentence creates a sentence involving one or more ponies, a verb,
 // possibly a thing, and a place where it all happens.
 func NewSentence(poneAmt int) (s string) {
-	s, _ = generate()
+	s, _ = generate(poneAmt)
 	return s
 }
 
@@ -41,7 +41,7 @@ func NewSentenceWithImages(poneAmt int) (string, []string) {
 // involving one or more ponies, a verb, possibly a thing, and a place where it
 // all happens. Has the possibility of generating NSFW content.
 func NewSentenceNSFW(poneAmt int) (s string) {
-	s, _ = generate()
+	s, _ = generate(poneAmt)
 	return s
 }
 
