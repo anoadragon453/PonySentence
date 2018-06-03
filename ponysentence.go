@@ -89,7 +89,7 @@ func generate(ponyCount int) (string, []string) {
 		{"Snips", "https://i.imgur.com/u7JGqe2.png"},
 		{"Snails", "https://i.imgur.com/5VcdRiZ.png"},
 		{"Button Mash", "https://i.imgur.com/XS7V0QC.png"},
-		{"Star Sparkle", "https://i.imgur.com/lmXlhfu.png"},
+		{"Twilight Velvet", "https://i.imgur.com/lmXlhfu.png"},
 		{"Nightlight", "https://i.imgur.com/pk8iqr0.png"},
 		{"Shining Armor", "https://i.imgur.com/l1hM3wn.png"},
 		{"Limestone", "https://i.imgur.com/7T6npfv.png"},
@@ -170,7 +170,6 @@ func generate(ponyCount int) (string, []string) {
 		{"drown", "drowns"},
 		{"find", "finds"},
 		{"face", "faces"},
-		{"fuck", "fucks"},
 		{"grease", "greases"},
 		{"glue", "glues"},
 		{"hammer", "hammers"},
@@ -180,10 +179,7 @@ func generate(ponyCount int) (string, []string) {
 		{"love", "loves"},
 		{"lick", "licks"},
 		{"kill", "kills"},
-		{"milk", "milks"},
-		{"paddle", "paddles"},
 		{"question", "questions"},
-		{"rub", "rubs"},
 		{"remove", "removes"},
 		{"stop", "stops"},
 		{"soothe", "soothes"},
@@ -210,8 +206,6 @@ func generate(ponyCount int) (string, []string) {
 		{"walk around", "walks around"},
 		{"beg", "begs"},
 		{"attend a show", "attends a show"},
-		{"bomb", "bombs"},
-		{"get baked", "gets baked"},
 		{"breathe", "breathes"},
 		{"cough", "coughs"},
 		{"confess", "confesses"},
@@ -242,7 +236,6 @@ func generate(ponyCount int) (string, []string) {
 		"a head of lettuce",
 		"a lollipop",
 		"someone's grandmother",
-		"a slave",
 		"a baby",
 		"a train",
 		"some grass",
@@ -272,34 +265,25 @@ func generate(ponyCount int) (string, []string) {
 		"a diary",
 		"a treasure chest",
 		"farming supplies",
-		"sex toys",
-		"ballgags and whips",
 		"a magical cane",
 		"a magical crown",
 		"some rope",
 		"party supplies",
-		"a dildo",
 		"some swords and shields",
 		"tickets to the gala",
-		"a maid outfit",
 		"a picnic basket",
 		"a giant hat",
 		"a bus",
-		"a severed pony head",
 		"a packet of crayons",
 		"a padlock",
 		"a jar of honey",
-		"a collar",
 		"a basket of tomatos",
 		"a dinosaur",
 		"a stack of pancakes",
 		"a gun",
 		"a gokart",
-		"a butt plug",
-		"a chastity cage",
 		"a ruler",
 		"a big sack of bits",
-		"Spike's secret porn collection",
 		"a magical pencil",
 	}
 
@@ -314,7 +298,6 @@ func generate(ponyCount int) (string, []string) {
 		"in Cloudsdale",
 		"in Rainbow's Parent's House",
 		"in the CMC Clubhouse",
-		"at the Twin Towers",
 		"at Fluttershy's Cottage",
 		"at Sweet Apple Acres",
 		"in Rarity's Boutique",
@@ -326,8 +309,6 @@ func generate(ponyCount int) (string, []string) {
 		"in Seaquestria",
 		"at Mt. Aris",
 		"at the Town of Griffonstone",
-		"deep within Pinkie Pie's Party Cave",
-		"at an orgy",
 		"within the Everfree Forest",
 		"in Daring Do's shack",
 		"at the Pie Rock Farm",
@@ -356,10 +337,10 @@ func generate(ponyCount int) (string, []string) {
 
 	// Grab them
 	ponies := make([]pony, ponyCount+1, ponyCount+1)
-	for ; ponyCount >= 0; ponyCount-- {
+	for i := 0; i <= ponyCount; i++ {
 		p := pickRandomPony(r, ponies, characters)
 		images = append(images, p.Photo)
-		ponies[ponyCount] = p
+		ponies[i] = p
 	}
 
 	// Transform the slice into a string
